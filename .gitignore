@@ -1,24 +1,44 @@
+# System files
 *.log
 .DS_Store
+Thumbs.db
+
+# Environment
 .env
 .env.backup
 .env.production
+.env.*.local
+
+# PHP / Composer
 .phpactor.json
 .phpunit.result.cache
-/.fleet
-/.idea
-/.nova
 /.phpunit.cache
-/.vscode
-/.zed
 /auth.json
+/vendor
+
+# Node
 /node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# Laravel
 /public/build
 /public/hot
 /public/storage
 /storage/*.key
 /storage/pail
-/vendor
+/bootstrap/cache/*.php
+
+# IDE / editor
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# Vagrant
 Homestead.json
 Homestead.yaml
-Thumbs.db
